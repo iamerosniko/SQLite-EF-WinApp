@@ -16,5 +16,12 @@ namespace Quiz
         {
             InitializeComponent();
         }
+
+        private void Main_Load(object sender, EventArgs e)
+        {
+            BL_Quiz q = new BL_Quiz();
+            MessageBox.Show(q.GetQuestion().Count().ToString());
+            q.SaveResults(new Student());
+        }
     }
 }

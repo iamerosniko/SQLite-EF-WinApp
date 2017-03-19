@@ -4,17 +4,17 @@
   <description asmv2:publisher="Quiz" asmv2:product="Quiz" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <deployment install="true" mapFileExtensions="true" />
   <compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">
-    <framework targetVersion="4.5" profile="Full" supportedRuntime="4.0.30319" />
+    <framework targetVersion="4.5.1" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="Quiz.exe.manifest" size="7837">
+    <dependentAssembly dependencyType="install" codebase="Quiz.exe.manifest" size="8231">
       <assemblyIdentity name="Quiz.exe" version="1.0.0.1" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="x86" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>DRo4v0Z/Q8mHMRd0wtNmYOf4AhyW2qaLR1YlloyN3OI=</dsig:DigestValue>
+        <dsig:DigestValue>pLm010hFosfyG9sHj11EYeN3hR5eCh6lMqNJt/PsmdY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
