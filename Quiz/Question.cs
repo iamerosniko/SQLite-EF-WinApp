@@ -19,6 +19,7 @@ namespace Quiz
         public string Q_ChoiceA { get; set; }
         public string Q_ChoiceB { get; set; }
         public string Q_ChoiceC { get; set; }
+        public Nullable<long> Q_ChoiceD { get; set; }
         public string Q_Answer { get; set; }
         public string Q_PicturePath { get; set; }
     }

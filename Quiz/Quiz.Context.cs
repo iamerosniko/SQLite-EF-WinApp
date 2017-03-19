@@ -25,7 +25,7 @@ namespace Quiz
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Question> Questions { get; set; }
         public virtual DbSet<Student> Students { get; set; }
+        public virtual DbSet<Question> Questions { get; set; }
     }
 }
