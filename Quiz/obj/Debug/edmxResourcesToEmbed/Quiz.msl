@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="QuizModelStoreContainer" CdmEntityContainer="QuizEntities">
+    <EntitySetMapping Name="Questions">
+      <EntityTypeMapping TypeName="QuizModel.Question">
+        <MappingFragment StoreEntitySet="Questions">
+          <ScalarProperty Name="Q_ID" ColumnName="Q_ID" />
+          <ScalarProperty Name="Q_Question" ColumnName="Q_Question" />
+          <ScalarProperty Name="Q_ChoiceA" ColumnName="Q_ChoiceA" />
+          <ScalarProperty Name="Q_ChoiceB" ColumnName="Q_ChoiceB" />
+          <ScalarProperty Name="Q_ChoiceC" ColumnName="Q_ChoiceC" />
+          <ScalarProperty Name="Q_Answer" ColumnName="Q_Answer" />
+          <ScalarProperty Name="Q_PicturePath" ColumnName="Q_PicturePath" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Students">
+      <EntityTypeMapping TypeName="QuizModel.Student">
+        <MappingFragment StoreEntitySet="Students">
+          <ScalarProperty Name="S_ID" ColumnName="S_ID" />
+          <ScalarProperty Name="S_FirstName" ColumnName="S_FirstName" />
+          <ScalarProperty Name="S_LastName" ColumnName="S_LastName" />
+          <ScalarProperty Name="S_Course" ColumnName="S_Course" />
+          <ScalarProperty Name="S_Year" ColumnName="S_Year" />
+          <ScalarProperty Name="S_Score" ColumnName="S_Score" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

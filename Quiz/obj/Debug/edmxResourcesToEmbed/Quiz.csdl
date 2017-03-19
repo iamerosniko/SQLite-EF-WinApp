@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QuizModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Question">
+    <Key>
+      <PropertyRef Name="Q_ID" />
+    </Key>
+    <Property Name="Q_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Q_Question" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="Q_ChoiceA" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="Q_ChoiceB" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="Q_ChoiceC" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="Q_Answer" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="Q_PicturePath" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Student">
+    <Key>
+      <PropertyRef Name="S_ID" />
+    </Key>
+    <Property Name="S_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="S_FirstName" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="S_LastName" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="S_Course" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="S_Year" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="S_Score" Type="Int64" />
+  </EntityType>
+  <EntityContainer Name="QuizEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Questions" EntityType="Self.Question" />
+    <EntitySet Name="Students" EntityType="Self.Student" />
+  </EntityContainer>
+</Schema>
