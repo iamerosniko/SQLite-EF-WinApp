@@ -7,11 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Configuration;
 namespace Quiz
 {
     public partial class Main : Form
     {
+        BL_Quiz q = new BL_Quiz();
+        int page = 1;
+        int lastPage;
         public Main()
         {
             InitializeComponent();
@@ -19,9 +22,25 @@ namespace Quiz
 
         private void Main_Load(object sender, EventArgs e)
         {
-            BL_Quiz q = new BL_Quiz();
-            MessageBox.Show(q.GetQuestion().Count().ToString());
-            q.SaveResults(new Student());
+            lastPage = q.GetQuestion().Count();
+            refresh();
         }
+
+        private void refresh()
+        {
+            //refresh lblCtr
+            lblCtr.Text = "Question #: " + page.ToString() + " of " + lastPage.ToString();
+        }
+
+        
+            //string connStr = ConfigurationManager.ConnectionStrings["ThisQuizEntities"].ConnectionString;
+            //MessageBox.Show(connStr);
+            
+            //string newConnStr = @"metadata=res://*/QuizContext.csdl|res://*/QuizContext.ssdl|res://*/QuizContext.msl;provider=System.Data.SQLite.EF6;provider connection string='data source=;" + Application.StartupPath +@"\Quiz.sqlite" + @";'";
+            //MessageBox.Show(newConnStr);
+            ////MessageBox.Show(ConfigurationSettings.AppSettings["ThisQuizEntities"].ToString());
+            //ConfigurationManager.ConnectionStrings["ThisQuizEntities"].ConnectionString = newConnStr;
+            //MessageBox.Show(q.GetQuestion().Count().ToString());
+            //q.SaveResults(new Student());
     }
 }

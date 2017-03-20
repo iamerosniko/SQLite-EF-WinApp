@@ -66,14 +66,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Quiz.exe" size="17408">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Quiz.exe" size="18944">
       <assemblyIdentity name="Quiz" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Gf82dOPZY7AeELqWK4LXinqajFHB4SFElYEN1ymi4hM=</dsig:DigestValue>
+        <dsig:DigestValue>dku6BgouigoUqt3TnBfgcl43nwHPoRvQ/y3oINRmiKE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -113,13 +113,13 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="Quiz.exe.config" size="2855">
+  <file name="Quiz.exe.config" size="3140">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>bEEXZLDskaIZRJTET8Mbc5upzdniZw/x12gZpx2lLN0=</dsig:DigestValue>
+      <dsig:DigestValue>3QKwmokudfS5Pf+84ZP4Tc0Gy4yN7xb2IWkUb2r8NOs=</dsig:DigestValue>
     </hash>
   </file>
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
