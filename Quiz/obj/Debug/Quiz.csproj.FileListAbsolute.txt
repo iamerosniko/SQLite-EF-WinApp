@@ -16,8 +16,9 @@ C:\Users\this_server\Documents\Visual Studio 2013\Projects\Quiz\Quiz\obj\Debug\Q
 C:\Users\this_server\Documents\Visual Studio 2013\Projects\Quiz\Quiz\obj\Debug\Quiz.exe
 C:\Users\this_server\Documents\Visual Studio 2013\Projects\Quiz\Quiz\obj\Debug\Quiz.pdb
 C:\Users\this_server\Documents\Visual Studio 2013\Projects\Quiz\Quiz\bin\Debug\Quiz.exe.config
-C:\Users\this_server\Documents\Visual Studio 2013\Projects\Quiz\Quiz\bin\Debug\Quiz.sqlite
 C:\Users\this_server\Documents\Visual Studio 2013\Projects\Quiz\Quiz\bin\Debug\Quiz.exe.manifest
 C:\Users\this_server\Documents\Visual Studio 2013\Projects\Quiz\Quiz\bin\Debug\Quiz.application
 C:\Users\this_server\Documents\Visual Studio 2013\Projects\Quiz\Quiz\bin\Debug\Quiz.exe
 C:\Users\this_server\Documents\Visual Studio 2013\Projects\Quiz\Quiz\bin\Debug\Quiz.pdb
+C:\Users\this_server\documents\visual studio 2013\Projects\Quiz\Quiz\obj\Debug\Quiz.formQuestion.resources
+C:\Users\this_server\documents\visual studio 2013\Projects\Quiz\Quiz\obj\Debug\Quiz.Login.resources

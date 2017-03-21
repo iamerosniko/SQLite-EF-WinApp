@@ -66,14 +66,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Quiz.exe" size="20992">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Quiz.exe" size="24576">
       <assemblyIdentity name="Quiz" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>E2QmCSRHU7+WQ208drmWP0NFICKg97kNS+hIQe9avSE=</dsig:DigestValue>
+        <dsig:DigestValue>MgJgnLaIU2OEpMCkRljp6h8NBVtF9gwme1ALid9Zq8g=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
