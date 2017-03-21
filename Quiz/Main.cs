@@ -13,6 +13,7 @@ namespace Quiz
     public partial class Main : Form
     {
         BL_Quiz q = new BL_Quiz();
+        List<Question> myQuestion=new List<Question>();
         int page = 1;
         int lastPage;
         public Main()
@@ -22,30 +23,50 @@ namespace Quiz
 
         private void Main_Load(object sender, EventArgs e)
         {
-            lastPage = q.GetQuestion().Count();
-            refresh();
+
         }
 
+        //custom functions
+
+        private void Initiate()
+        {
+            var a = q.GetQuestion();
+            MessageBox.Show(a.ElementAt(page).Q_Answer.ToString());
+            lastPage = myQuestion.Count();
+            //refresh();
+        }
         private void refresh()
         {
             //refresh lblCtr
             lblCtr.Text = "Question #: " + page.ToString() + " of " + lastPage.ToString();
+            provideThings(page);
         }
 
+        private void provideThings(int currentPage)
+        {
+            txtQuestion.Text = myQuestion[currentPage-1].Q_Question.ToString().Trim();
+            choiceA.Text = myQuestion[currentPage-1].Q_ChoiceA.ToString().Trim();
+            choiceB.Text = myQuestion[currentPage-1].Q_ChoiceB.ToString().Trim();
+            choiceC.Text = myQuestion[currentPage-1].Q_ChoiceC.ToString().Trim();
+            choiceD.Text = myQuestion[currentPage-1].Q_ChoiceD.ToString().Trim();
+            isEmpty();
+        }
+        private void isEmpty()
+        {
+            choiceC.Enabled = choiceC.Text.Trim().Equals(0);
+            choiceD.Enabled = choiceD.Text.Trim().Equals(0);
+        }
+        //event triggers
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
+        private void startQuizToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Initiate();
+        }
+
         
-            //string connStr = ConfigurationManager.ConnectionStrings["ThisQuizEntities"].ConnectionString;
-            //MessageBox.Show(connStr);
-            
-            //string newConnStr = @"metadata=res://*/QuizContext.csdl|res://*/QuizContext.ssdl|res://*/QuizContext.msl;provider=System.Data.SQLite.EF6;provider connection string='data source=;" + Application.StartupPath +@"\Quiz.sqlite" + @";'";
-            //MessageBox.Show(newConnStr);
-            ////MessageBox.Show(ConfigurationSettings.AppSettings["ThisQuizEntities"].ToString());
-            //ConfigurationManager.ConnectionStrings["ThisQuizEntities"].ConnectionString = newConnStr;
-            //MessageBox.Show(q.GetQuestion().Count().ToString());
-            //q.SaveResults(new Student());
     }
 }

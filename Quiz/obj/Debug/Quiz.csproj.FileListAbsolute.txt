@@ -6,7 +6,6 @@ C:\Users\this_server\Documents\Visual Studio 2013\Projects\Quiz\Quiz\bin\Debug\S
 C:\Users\this_server\Documents\Visual Studio 2013\Projects\Quiz\Quiz\bin\Debug\EntityFramework.xml
 C:\Users\this_server\Documents\Visual Studio 2013\Projects\Quiz\Quiz\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\this_server\Documents\Visual Studio 2013\Projects\Quiz\Quiz\bin\Debug\System.Data.SQLite.xml
-C:\Users\this_server\Documents\Visual Studio 2013\Projects\Quiz\Quiz\obj\Debug\Quiz.csprojResolveAssemblyReference.cache
 C:\Users\this_server\Documents\Visual Studio 2013\Projects\Quiz\Quiz\obj\Debug\Quiz.Main.resources
 C:\Users\this_server\Documents\Visual Studio 2013\Projects\Quiz\Quiz\obj\Debug\Quiz.Properties.Resources.resources
 C:\Users\this_server\Documents\Visual Studio 2013\Projects\Quiz\Quiz\obj\Debug\Quiz.csproj.GenerateResource.Cache

@@ -126,6 +126,7 @@
     <Compile Include="Question.cs">
       <DependentUpon>QuizContext.tt</DependentUpon>
     </Compile>
+    <Compile Include="QuestionDTO.cs" />
     <Compile Include="QuizContext.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
