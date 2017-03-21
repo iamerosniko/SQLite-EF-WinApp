@@ -32,6 +32,11 @@ namespace Quiz
             lblCtr.Text = "Question #: " + page.ToString() + " of " + lastPage.ToString();
         }
 
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
         
             //string connStr = ConfigurationManager.ConnectionStrings["ThisQuizEntities"].ConnectionString;
             //MessageBox.Show(connStr);
