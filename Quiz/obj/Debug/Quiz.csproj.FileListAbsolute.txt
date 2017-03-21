@@ -21,3 +21,5 @@ C:\Users\this_server\Documents\Visual Studio 2013\Projects\Quiz\Quiz\bin\Debug\Q
 C:\Users\this_server\Documents\Visual Studio 2013\Projects\Quiz\Quiz\bin\Debug\Quiz.pdb
 C:\Users\this_server\documents\visual studio 2013\Projects\Quiz\Quiz\obj\Debug\Quiz.formQuestion.resources
 C:\Users\this_server\documents\visual studio 2013\Projects\Quiz\Quiz\obj\Debug\Quiz.Login.resources
+C:\Users\this_server\documents\visual studio 2013\Projects\Quiz\Quiz\obj\Debug\Quiz.csprojResolveAssemblyReference.cache
+C:\Users\this_server\documents\visual studio 2013\Projects\Quiz\Quiz\obj\Debug\Quiz.Reports.resources

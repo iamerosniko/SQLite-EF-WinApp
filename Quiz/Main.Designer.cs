@@ -44,6 +44,7 @@
             this.choiceC = new System.Windows.Forms.RadioButton();
             this.choiceD = new System.Windows.Forms.RadioButton();
             this.button1 = new System.Windows.Forms.Button();
+            this.lblScore = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -57,6 +58,7 @@
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.menuStrip1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.tblPnlQnA, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.lblScore, 0, 4);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
@@ -94,20 +96,18 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 30);
+            this.label1.Size = new System.Drawing.Size(0, 30);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Name: ";
             // 
             // lblCtr
             // 
             this.lblCtr.AutoSize = true;
             this.lblCtr.Dock = System.Windows.Forms.DockStyle.Right;
             this.lblCtr.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCtr.Location = new System.Drawing.Point(729, 0);
+            this.lblCtr.Location = new System.Drawing.Point(781, 0);
             this.lblCtr.Name = "lblCtr";
-            this.lblCtr.Size = new System.Drawing.Size(52, 30);
+            this.lblCtr.Size = new System.Drawing.Size(0, 30);
             this.lblCtr.TabIndex = 3;
-            this.lblCtr.Text = "label1";
             // 
             // menuStrip1
             // 
@@ -132,7 +132,7 @@
             // startQuizToolStripMenuItem
             // 
             this.startQuizToolStripMenuItem.Name = "startQuizToolStripMenuItem";
-            this.startQuizToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.startQuizToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
             this.startQuizToolStripMenuItem.Text = "Start &Quiz";
             this.startQuizToolStripMenuItem.Click += new System.EventHandler(this.startQuizToolStripMenuItem_Click);
             // 
@@ -167,8 +167,8 @@
             this.tblPnlQnA.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tblPnlQnA.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tblPnlQnA.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tblPnlQnA.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 13F));
-            this.tblPnlQnA.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 27F));
+            this.tblPnlQnA.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tblPnlQnA.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tblPnlQnA.Size = new System.Drawing.Size(778, 370);
             this.tblPnlQnA.TabIndex = 2;
             // 
@@ -176,6 +176,7 @@
             // 
             this.txtQuestion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtQuestion.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtQuestion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtQuestion.Location = new System.Drawing.Point(20, 42);
             this.txtQuestion.Margin = new System.Windows.Forms.Padding(20, 3, 20, 3);
             this.txtQuestion.Name = "txtQuestion";
@@ -241,13 +242,24 @@
             // button1
             // 
             this.button1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button1.Location = new System.Drawing.Point(643, 323);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 3, 50, 10);
+            this.button1.Enabled = false;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(668, 330);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 3, 25, 10);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(85, 37);
+            this.button1.Size = new System.Drawing.Size(85, 30);
             this.button1.TabIndex = 6;
-            this.button1.Text = "button1";
+            this.button1.Text = "Submit";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // lblScore
+            // 
+            this.lblScore.AutoSize = true;
+            this.lblScore.Location = new System.Drawing.Point(3, 437);
+            this.lblScore.Name = "lblScore";
+            this.lblScore.Size = new System.Drawing.Size(0, 13);
+            this.lblScore.TabIndex = 3;
             // 
             // Main
             // 
@@ -295,6 +307,7 @@
         private System.Windows.Forms.RadioButton choiceC;
         private System.Windows.Forms.RadioButton choiceD;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label lblScore;
 
     }
 }
