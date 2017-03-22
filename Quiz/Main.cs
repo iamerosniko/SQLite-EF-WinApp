@@ -22,6 +22,7 @@ namespace Quiz
         public Main()
         {
             InitializeComponent();
+            lblScore.Visible = false;
         }
 
         private void Main_Load(object sender, EventArgs e)
@@ -60,6 +61,7 @@ namespace Quiz
                 myStudent.S_Score = score;
                 q.SaveResults(myStudent);
                 button1.Enabled = false;
+                startQuizToolStripMenuItem.Enabled = true;
             }
         }
 
@@ -78,7 +80,21 @@ namespace Quiz
             choiceC.Enabled = choiceC.Text.Trim().Equals("") ? false : true;
             choiceD.Enabled = choiceD.Text.Trim().Equals("") ? false : true;
         }
-        
+        private void confirmStudent()
+        {
+            if (myStudent.S_FirstName.Equals("") || myStudent.S_LastName.Equals("") || myStudent.S_Year.Equals("") || myStudent.S_Course.Equals(""))
+            {
+                MessageBox.Show("Fill up all fields upon login first!");
+            }
+            else
+            {
+                startQuizToolStripMenuItem.Enabled = false;
+                MessageBox.Show("Hi " + myStudent.S_FirstName + " " + myStudent.S_LastName + "\nYour Quiz will now start.");
+                label1.Text = "Hi " + myStudent.S_FirstName + " " + myStudent.S_LastName;
+                Initiate();
+            }
+        }
+
         //event triggers
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -96,20 +112,7 @@ namespace Quiz
             confirmStudent();
             //Initiate();
         }
-        private void confirmStudent()
-        {
-            if (myStudent.S_FirstName.Equals("") || myStudent.S_LastName.Equals("") || myStudent.S_Year.Equals("") || myStudent.S_Course.Equals(""))
-            {
-                MessageBox.Show("Fill up all fields upon login first!");
-            }
-            else
-            {
-                MessageBox.Show("Hi " + myStudent.S_FirstName + " " + myStudent.S_LastName + "\nYour Quiz will now start.");
-                label1.Text = "Hi " + myStudent.S_FirstName + " " + myStudent.S_LastName;
-                Initiate();
-            }
-        }
-
+        
         private void button1_Click(object sender, EventArgs e)
         {
             if (choiceA.Checked)
@@ -130,6 +133,12 @@ namespace Quiz
             }
             else
                 MessageBox.Show("Please provide your answer.");
+        }
+
+        private void showStudentRecordToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Reports rep = new Reports();
+            rep.ShowDialog();
         }
 
         

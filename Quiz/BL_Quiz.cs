@@ -14,16 +14,6 @@ namespace Quiz
         public List<QuestionDTO> GetQuestion()
         {
             List<QuestionDTO> ret = new List<QuestionDTO>();
-            //IList<Question> q = from l in db.Questions
-            //                    select new QuestionD(
-            //                        l.Q_Answer,
-            //                        l.Q_ChoiceA,
-            //                        l.Q_ChoiceB,
-            //                        l.Q_ChoiceC,
-            //                        l.Q_ChoiceD,
-            //                        l.Q_ID,
-            //                        l.Q_PicturePath,
-            //                        l.Q_Question);
             IEnumerable<QuestionDTO> q = from l in db.Questions
                                       select new QuestionDTO
                                       {
@@ -51,6 +41,22 @@ namespace Quiz
                 });
             }
             return ret;
+        }
+        public List<StudentsDTO> GetStudents()
+        {
+            IEnumerable<StudentsDTO> q = from l in db.Students
+                                         select new StudentsDTO
+                                         {
+                                             S_Course=l.S_Course,
+                                             S_ID=l.S_ID,
+                                             S_FirstName=l.S_FirstName,
+                                             S_LastName=l.S_LastName,
+                                             S_Score=(l.S_Score==null)?0:(int)l.S_Score,
+                                             S_Year=l.S_Year
+
+                                         };
+
+            return q.ToList();
         }
 
         public void SaveResults(Student stud)

@@ -151,6 +151,7 @@
     <Compile Include="Student.cs">
       <DependentUpon>QuizContext.tt</DependentUpon>
     </Compile>
+    <Compile Include="StudentsDTO.cs" />
     <EmbeddedResource Include="formQuestion.resx">
       <DependentUpon>formQuestion.cs</DependentUpon>
     </EmbeddedResource>

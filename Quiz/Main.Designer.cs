@@ -45,6 +45,7 @@
             this.choiceD = new System.Windows.Forms.RadioButton();
             this.button1 = new System.Windows.Forms.Button();
             this.lblScore = new System.Windows.Forms.Label();
+            this.showStudentRecordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -123,6 +124,7 @@
             // 
             this.menuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.startQuizToolStripMenuItem,
+            this.showStudentRecordToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.menuToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
@@ -132,14 +134,14 @@
             // startQuizToolStripMenuItem
             // 
             this.startQuizToolStripMenuItem.Name = "startQuizToolStripMenuItem";
-            this.startQuizToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.startQuizToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
             this.startQuizToolStripMenuItem.Text = "Start &Quiz";
             this.startQuizToolStripMenuItem.Click += new System.EventHandler(this.startQuizToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
             this.exitToolStripMenuItem.Text = "&Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -261,6 +263,13 @@
             this.lblScore.Size = new System.Drawing.Size(0, 13);
             this.lblScore.TabIndex = 3;
             // 
+            // showStudentRecordToolStripMenuItem
+            // 
+            this.showStudentRecordToolStripMenuItem.Name = "showStudentRecordToolStripMenuItem";
+            this.showStudentRecordToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
+            this.showStudentRecordToolStripMenuItem.Text = "Student Scores";
+            this.showStudentRecordToolStripMenuItem.Click += new System.EventHandler(this.showStudentRecordToolStripMenuItem_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -308,6 +317,7 @@
         private System.Windows.Forms.RadioButton choiceD;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label lblScore;
+        private System.Windows.Forms.ToolStripMenuItem showStudentRecordToolStripMenuItem;
 
     }
 }
