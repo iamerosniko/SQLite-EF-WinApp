@@ -174,7 +174,9 @@
     <EmbeddedResource Include="Reports.resx">
       <DependentUpon>Reports.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="basketball.sqlite" />
+    <None Include="basketball.sqlite">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
@@ -204,7 +206,9 @@
       <LastGenOutput>QuizContext.cs</LastGenOutput>
     </None>
     <None Include="Quiz.sqlite" />
-    <None Include="volleyball.sqlite" />
+    <None Include="volleyball.sqlite">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">

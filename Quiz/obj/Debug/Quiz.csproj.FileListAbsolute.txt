@@ -23,3 +23,5 @@ C:\Users\this_server\documents\visual studio 2013\Projects\Quiz\Quiz\obj\Debug\Q
 C:\Users\this_server\documents\visual studio 2013\Projects\Quiz\Quiz\obj\Debug\Quiz.Login.resources
 C:\Users\this_server\documents\visual studio 2013\Projects\Quiz\Quiz\obj\Debug\Quiz.csprojResolveAssemblyReference.cache
 C:\Users\this_server\documents\visual studio 2013\Projects\Quiz\Quiz\obj\Debug\Quiz.Reports.resources
+C:\Users\this_server\documents\visual studio 2013\Projects\Quiz\Quiz\bin\Debug\basketball.sqlite
+C:\Users\this_server\documents\visual studio 2013\Projects\Quiz\Quiz\bin\Debug\volleyball.sqlite
