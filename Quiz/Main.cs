@@ -22,7 +22,8 @@ namespace Quiz
         public Main()
         {
             InitializeComponent();
-            lblScore.Visible = false;
+            lblScore.Text = @"(c) Alpha Corporation && Stephanie Bardolasa";
+
         }
 
         private void Main_Load(object sender, EventArgs e)
@@ -46,7 +47,6 @@ namespace Quiz
             if (page <= lastPage)
             {
                 //lblScore.Text = score.ToString();
-                lblScore.Text = myQuestion[page - 1].Q_Answer.ToString().Trim();
                 choiceA.Checked = false;
                 choiceB.Checked = false;
                 choiceC.Checked = false;
